@@ -1,0 +1,13 @@
+# codebase-coffee's own memory file — personal, never shared
+.codebase-coffee.md
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# local scratch
+*.local
+.env

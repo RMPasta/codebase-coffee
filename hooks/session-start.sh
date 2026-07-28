@@ -3,8 +3,16 @@
 # given repo, add a one-line nudge to context so the agent offers coffee.
 set -eu
 project="${CLAUDE_PROJECT_DIR:-$PWD}"
-key=$(printf '%s' "$project" | md5sum | cut -d' ' -f1)
-stamp_dir="${XDG_CACHE_HOME:-$HOME/.cache}/codebase-coffee"
+if command -v md5sum >/dev/null 2>&1; then
+  key=$(printf '%s' "$project" | md5sum | cut -d' ' -f1)
+elif command -v md5 >/dev/null 2>&1; then
+  key=$(printf '%s' "$project" | md5 -q)
+elif command -v shasum >/dev/null 2>&1; then
+  key=$(printf '%s' "$project" | shasum | cut -d' ' -f1)
+else
+  key=$(printf '%s' "$project" | tr -c 'A-Za-z0-9' '_' | cut -c1-120)
+fi
+stamp_dir="${XDG_CACHE_HOME:-${HOME:-/tmp}/.cache}/codebase-coffee"
 mkdir -p "$stamp_dir"
 stamp="$stamp_dir/$key"
 today=$(date +%F)

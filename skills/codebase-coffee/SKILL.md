@@ -35,7 +35,7 @@ Serve one very short refresher about this codebase, then stop. The whole product
 
 ## Memory file: .codebase-coffee.md
 
-Lives at the target repo's root. When you first create it, offer once to add it to `.gitignore`: it is personal to this user and should not be pushed. Format:
+Lives at the target repo's root. Offer to add it to .gitignore only in the run where no .codebase-coffee.md existed when you started: it is personal to this user and should not be pushed. A rescan rewrite is not a first creation. If the user declines or never answers, leave it alone. Format:
 
     # codebase-coffee
     last_scan: 2026-07-28
@@ -63,3 +63,4 @@ Rank recently changed areas and code the user did not author higher. Write the f
 - Never serve two concepts in one day unless the user asks.
 - Never rescan while unserved concepts remain and the last scan is under 30 days old.
 - Never pad the brief to seem thorough. Under-explaining is the feature.
+- Never nag about gitignore. One offer, ever.

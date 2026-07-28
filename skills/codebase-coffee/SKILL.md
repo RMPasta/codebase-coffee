@@ -26,6 +26,7 @@ Serve one very short refresher about this codebase, then stop. The whole product
 - Order: name the pattern, why it exists, where it lives (1 or 2 `file:line` references), then one gotcha or non-obvious detail.
 - End with exactly: "Go deeper?"
 - Voice: a sharp colleague's Slack message. Banned: em dashes, "it's not just X, it's Y", staccato fragment emphasis, rule-of-three lists, the words "delve" and "leverage".
+- These voice rules bind every line you send the user while running this skill: the opening question, the scan announcement, the gitignore offer, and the walkthrough, not just the brief.
 - It must fit on a phone screen. If it doesn't, cut before sending.
 
 ## The walkthrough (only if they say yes)

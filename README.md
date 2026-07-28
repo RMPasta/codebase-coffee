@@ -8,7 +8,7 @@ We're all building with AI tooling now, and it's easy to let ownership of your o
 
 Run `/codebase-coffee` at the start of your day. You get a brief of under 100 words: what the pattern is, why it exists, where it lives in the code, and one gotcha that isn't obvious. It ends by asking if you want to go deeper. Say yes and you get a short walkthrough, or just get on with your day.
 
-The first run scans your repo and builds a personal curriculum of 20 to 30 concepts, saved to `.codebase-coffee.md` (gitignored, since it's personal to you). After that, mornings are instant because nothing needs rescanning. When the list runs dry or goes stale, it rebuilds itself. And if a teammate landed something notable since yesterday, that jumps to the front of the queue.
+The first run scans your repo and builds a personal curriculum of 20 to 30 concepts, saved to `.codebase-coffee.md` (it's personal to you, so say yes when it offers to gitignore it). After that, mornings are instant because nothing needs rescanning. When the list runs dry or goes stale, it rebuilds itself. And if a teammate landed something notable since yesterday, that jumps to the front of the queue.
 
 ## Install
 

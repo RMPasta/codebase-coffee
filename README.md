@@ -2,7 +2,7 @@
 
 We're all building with AI tooling now, and it's easy to let ownership of your own code slip. codebase-coffee wakes you up with an extremely short refresher each day about one concept, pattern, or convention in your repo, so you hold on to your understanding of the thing you're building.
 
-**Status: in development.** The design is done ([spec](docs/superpowers/specs/2026-07-28-codebase-coffee-design.md)) and the skill itself lands next.
+**Status: v0.1.** Works today in Claude Code (with an optional auto-offer each morning); installable anywhere that speaks the Agent Skills format.
 
 ## How it works
 
@@ -12,4 +12,13 @@ The first run scans your repo and builds a personal curriculum of 20 to 30 conce
 
 ## Install
 
-Coming with v1. It will be one skill folder you can install in Claude Code, Cursor, Codex, and anything else that speaks the Agent Skills format.
+**Claude Code (plugin, includes the morning auto-offer):**
+
+    /plugin marketplace add RMPasta/codebase-coffee
+    /plugin install codebase-coffee@codebase-coffee
+
+**Claude Code (skill only):** copy `skills/codebase-coffee/` into `~/.claude/skills/`.
+
+**Cursor / Codex / other Agent Skills tools:** copy `skills/codebase-coffee/` into your tool's skills directory (for example `.cursor/skills/`). Then run it by asking for `/codebase-coffee` or "my codebase coffee". The morning auto-offer is Claude Code only for now; everywhere else you run it yourself.
+
+On first run it scans your repo (about a minute) and builds `.codebase-coffee.md`, your personal curriculum. It will offer to gitignore that file; say yes, it's personal.

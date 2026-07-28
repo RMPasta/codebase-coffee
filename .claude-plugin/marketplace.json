@@ -3,6 +3,7 @@
   "owner": {
     "name": "RMPasta"
   },
+  "description": "Marketplace for the codebase-coffee plugin.",
   "plugins": [
     {
       "name": "codebase-coffee",

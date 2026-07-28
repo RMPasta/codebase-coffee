@@ -10,15 +10,42 @@ Run `/codebase-coffee` at the start of your day. You get a brief of under 100 wo
 
 The first run scans your repo and builds a personal curriculum of 20 to 30 concepts, saved to `.codebase-coffee.md` (it's personal to you, so say yes when it offers to gitignore it). After that, mornings are instant because nothing needs rescanning. When the list runs dry or goes stale, it rebuilds itself. And if a teammate landed something notable since yesterday, that jumps to the front of the queue.
 
-## Install
+## Setup
 
-**Claude Code (plugin, includes the morning auto-offer):**
+### Claude Code (the full experience, with the morning auto-offer)
+
+Inside any chat, run these two commands in this order (the install looks plugins up by marketplace name, so the add has to come first):
 
     /plugin marketplace add RMPasta/codebase-coffee
     /plugin install codebase-coffee@codebase-coffee
 
-**Claude Code (skill only):** copy `skills/codebase-coffee/` into `~/.claude/skills/`.
+From a terminal instead: `claude plugin marketplace add RMPasta/codebase-coffee`, then `claude plugin install codebase-coffee@codebase-coffee`. The plugin is active for sessions started after the install. Your first new session of each day in a repo will open by offering you coffee; you can also run `/codebase-coffee` yourself anytime. On native Windows the auto-offer needs Git Bash installed; the skill itself runs anywhere.
 
-**Cursor / Codex / other Agent Skills tools:** copy `skills/codebase-coffee/` into your tool's skills directory (for example `.cursor/skills/`). Then run it by asking for `/codebase-coffee` or "my codebase coffee". The morning auto-offer is Claude Code only for now; everywhere else you run it yourself. On native Windows the auto-offer hook needs Git Bash installed; the skill itself runs anywhere.
+### Claude Code (skill only, no auto-offer)
 
-On first run it scans your repo (about a minute) and builds `.codebase-coffee.md`, your personal curriculum. It will offer to gitignore that file; say yes, it's personal.
+    git clone https://github.com/RMPasta/codebase-coffee
+    cp -r codebase-coffee/skills/codebase-coffee ~/.claude/skills/
+
+Use a repo's `.claude/skills/` directory instead to install it for that project only.
+
+### Cursor
+
+    git clone https://github.com/RMPasta/codebase-coffee
+    cp -r codebase-coffee/skills/codebase-coffee ~/.cursor/skills/
+
+Or drop the folder into a repo's `.cursor/skills/` for that project only. Start your day by asking the agent for `/codebase-coffee` or "my codebase coffee".
+
+### Codex
+
+    git clone https://github.com/RMPasta/codebase-coffee
+    cp -r codebase-coffee/skills/codebase-coffee ~/.codex/skills/
+
+Then ask for codebase-coffee at the start of your day.
+
+### Anything else that speaks Agent Skills
+
+Copy `skills/codebase-coffee/` into your tool's skills directory. The skill is self-contained; the auto-offer is Claude Code only for now, so everywhere else running it yourself is the ritual.
+
+### First run
+
+In each repo, the first run scans the codebase (about a minute) and builds `.codebase-coffee.md`, your personal curriculum. It offers to gitignore that file; say yes, it's personal. Every morning after that is instant.

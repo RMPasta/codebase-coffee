@@ -26,9 +26,13 @@ out="$(bash "$script")"; rc=$?
 check "second run same day is silent" empty "$out"
 check_rc "silent run exits 0" "$rc"
 export CLAUDE_PROJECT_DIR="/tmp/repo-b"
-check "different repo nudges again" nonempty "$(bash "$script")"
+out="$(bash "$script")"; rc=$?
+check "different repo nudges again" nonempty "$out"
+check_rc "different repo exits 0" "$rc"
 export CLAUDE_PROJECT_DIR="/tmp/repo-a"
-check "repo-a still silent" empty "$(bash "$script")"
+out="$(bash "$script")"; rc=$?
+check "repo-a still silent" empty "$out"
+check_rc "repo-a silent run exits 0" "$rc"
 
 # Force the last-resort key branch: a PATH with no md5sum, md5, or shasum.
 fakebin="$(mktemp -d)"

@@ -1,0 +1,13 @@
+{
+  "name": "codebase-coffee",
+  "owner": {
+    "name": "RMPasta"
+  },
+  "plugins": [
+    {
+      "name": "codebase-coffee",
+      "source": "./",
+      "description": "A very short daily refresher on one concept in your codebase, so ownership doesn't slip while you build with AI."
+    }
+  ]
+}

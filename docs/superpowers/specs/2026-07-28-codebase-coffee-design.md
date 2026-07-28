@@ -40,6 +40,7 @@ Non-negotiable rules written into `SKILL.md`:
 
 - **≤100 words.**
 - **No headers, no bullet lists, no preamble, no praise, no filler.**
+- **No AI-writing tells**: no em dashes, no "it's not just X, it's Y" pivots, no staccato fragment emphasis ("No fluff. No filler."), no rule-of-three lists, no "delve"/"leverage" vocabulary. Reads like a sharp colleague's Slack message.
 - Content, in order: the pattern's name → why it exists → where it lives (1–2 `file:line` references) → one gotcha or non-obvious detail.
 - Ends with exactly: **"Go deeper?"**
 - If the user says yes → a tight walkthrough, **~300 words max**, code excerpts allowed. Concept is then marked `deep ✓` in memory.

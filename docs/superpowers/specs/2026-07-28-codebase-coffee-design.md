@@ -88,7 +88,7 @@ Cursor/Codex equivalents documented in the README as those tools allow; manual i
 
 ## Testing
 
-Guinea-pig repo: `~/pellerum/energy-management`.
+Guinea-pig repo: a real production monorepo on the author's machine.
 
 - **First-run scan quality** — are the ~20–30 concepts genuinely the ones that matter?
 - **Brief brevity** — police the ≤100-word contract; this is the make-or-break behavior.

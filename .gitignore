@@ -1,5 +1,8 @@
-# codebase-coffee's own memory file — personal, never shared
+# codebase-coffee's own memory file: personal, never shared
 .codebase-coffee.md
+
+# local planning scratch, not part of the public release
+docs/superpowers/plans/
 
 # OS / editor junk
 .DS_Store

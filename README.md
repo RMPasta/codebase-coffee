@@ -19,6 +19,6 @@ The first run scans your repo and builds a personal curriculum of 20 to 30 conce
 
 **Claude Code (skill only):** copy `skills/codebase-coffee/` into `~/.claude/skills/`.
 
-**Cursor / Codex / other Agent Skills tools:** copy `skills/codebase-coffee/` into your tool's skills directory (for example `.cursor/skills/`). Then run it by asking for `/codebase-coffee` or "my codebase coffee". The morning auto-offer is Claude Code only for now; everywhere else you run it yourself.
+**Cursor / Codex / other Agent Skills tools:** copy `skills/codebase-coffee/` into your tool's skills directory (for example `.cursor/skills/`). Then run it by asking for `/codebase-coffee` or "my codebase coffee". The morning auto-offer is Claude Code only for now; everywhere else you run it yourself. On native Windows the auto-offer hook needs Git Bash installed; the skill itself runs anywhere.
 
 On first run it scans your repo (about a minute) and builds `.codebase-coffee.md`, your personal curriculum. It will offer to gitignore that file; say yes, it's personal.

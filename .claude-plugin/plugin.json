@@ -1,7 +1,7 @@
 {
   "name": "codebase-coffee",
   "description": "A very short daily refresher on one concept in your codebase, so ownership doesn't slip while you build with AI.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/RMPasta/codebase-coffee",
   "repository": "https://github.com/RMPasta/codebase-coffee",
   "author": {

@@ -31,7 +31,7 @@ Serve one very short refresher about this codebase, then stop. The whole product
 
 ## The walkthrough (only if they say yes)
 
-300 words maximum, same voice rules. Short code excerpts are allowed. Walk the real flow through the files, and end by pointing at one spot where they can verify the behavior themselves.
+300 words maximum, same voice rules. Short code excerpts are allowed. The walkthrough is a tour, not a review: explain how it works, why it's built that way, and how it connects to its neighbors. At most one gotcha or war story; you are building the user's mental model of the code as it stands, not auditing it for problems. Walk the real flow through the files, and end by pointing at one spot where they can verify the behavior themselves.
 
 ## Memory file: .codebase-coffee.md
 

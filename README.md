@@ -2,13 +2,21 @@
 
 We're all building with AI tooling now, and it's easy to let ownership of your own code slip. codebase-coffee wakes you up with an extremely short refresher each day about one concept, pattern, or convention in your repo, so you hold on to your understanding of the thing you're building.
 
-**Status: v0.1.** Works in any tool that speaks the Agent Skills format. In Claude Code it can also greet you with your refresher each morning; everywhere else you start it yourself.
+**Current release: v0.1.1.** Works in any tool that supports the Agent Skills format. In Claude Code it can also greet you with your refresher each morning; everywhere else you start it yourself.
 
 ## How it works
 
 Run `/codebase-coffee` at the start of your day. You get a brief of under 100 words: what the pattern is, why it exists, where it lives, and one gotcha that isn't obvious. Say yes to "Go deeper?" for a short walkthrough, or just get on with your day.
 
 The first run scans your repo and builds a personal curriculum of 20 to 30 concepts in `.codebase-coffee.md`. Every run after that takes seconds. When the list runs dry or goes stale, it rebuilds. If a teammate landed something notable since yesterday, that goes first.
+
+## Example
+
+A codebase-coffee brief looks like this:
+
+> Centralized error normalization keeps API failures consistent for the frontend. It lives in `src/server/errors.ts:18` and `src/api/client.ts:42`, where domain errors become stable response codes. The gotcha: unknown errors are intentionally collapsed to `INTERNAL_ERROR`, so debugging details belong in server logs, not the response.
+>
+> Go deeper?
 
 ## Setup
 

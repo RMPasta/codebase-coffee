@@ -1,5 +1,7 @@
 # codebase-coffee ☕
 
+**An open-source developer tool by [EraCode](https://www.eracode.ai/).**
+
 We're all building with AI tooling now, and it's easy to let ownership of your own code slip. codebase-coffee wakes you up with an extremely short refresher each day about one concept, pattern, or convention in your repo, so you hold on to your understanding of the thing you're building.
 
 **Current release: v0.1.1.** Works in any tool that supports the Agent Skills format. In Claude Code it can also greet you with your refresher each morning; everywhere else you start it yourself.

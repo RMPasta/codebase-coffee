@@ -16,7 +16,7 @@ check_rc() { # $1 desc, $2 rc
   echo "PASS: $1"
 }
 export XDG_CACHE_HOME="$(mktemp -d)"
-script="$(dirname "$0")/session-start.sh"
+script="$(dirname "$0")/daily-nudge.sh"
 
 export CLAUDE_PROJECT_DIR="/tmp/repo-a"
 out="$(bash "$script")"; rc=$?

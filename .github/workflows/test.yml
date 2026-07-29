@@ -11,4 +11,4 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - run: bash hooks/test-session-start.sh
+      - run: bash hooks/test-daily-nudge.sh

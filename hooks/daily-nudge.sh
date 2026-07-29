@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# codebase-coffee SessionStart hook: on the first session of the day in a
-# given repo, add a one-line nudge to context so the agent offers coffee.
+# codebase-coffee daily nudge, run on SessionStart and UserPromptSubmit:
+# the first time it fires in a repo each day, it adds a one-line nudge to
+# context so the agent offers coffee. Silent the rest of the day.
 set -eu
 project="${CLAUDE_PROJECT_DIR:-$PWD}"
 if command -v md5sum >/dev/null 2>&1; then

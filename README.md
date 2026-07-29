@@ -14,7 +14,7 @@ The first run scans your repo and builds a personal curriculum of 20 to 30 conce
 
 ### Claude Code
 
-Install as a plugin and coffee comes to you: the first time you open Claude Code in a repo each day, it offers your refresher before you ask. Run these two commands inside any chat, in this order:
+Install as a plugin and coffee comes to you: the first time you talk to Claude Code in a repo each day, whether that's a fresh session or yesterday's chat still open, it offers your refresher before you ask. Run these two commands inside any chat, in this order:
 
     /plugin marketplace add RMPasta/codebase-coffee
     /plugin install codebase-coffee@codebase-coffee

@@ -36,25 +36,15 @@ Prefer no greeting? Skip the plugin and copy the skill instead:
     git clone https://github.com/RMPasta/codebase-coffee
     cp -r codebase-coffee/skills/codebase-coffee ~/.claude/skills/
 
-### Cursor
+### Cursor, Codex, and most other agents
 
-    git clone https://github.com/RMPasta/codebase-coffee
-    cp -r codebase-coffee/skills/codebase-coffee ~/.cursor/skills/
+One command, no clone:
 
-Start your day by asking for `/codebase-coffee`. Cursor can't start it for you yet; only Claude Code can.
+    npx skills add RMPasta/codebase-coffee
 
-### Codex
+It asks which agents you use and puts the skill where each one looks. Then start your day by asking for `/codebase-coffee`. These tools can't start it for you yet; only Claude Code can.
 
-    git clone https://github.com/RMPasta/codebase-coffee
-    cp -r codebase-coffee/skills/codebase-coffee ~/.codex/skills/
-
-Same deal: ask for codebase-coffee each morning yourself.
-
-### Anything else that speaks Agent Skills
-
-Copy `skills/codebase-coffee/` into your tool's skills directory.
-
-For any tool, you can use a repo's local skills directory (like `.claude/skills/` or `.cursor/skills/`) to install for that project only.
+Prefer manual? Copy `skills/codebase-coffee/` into your tool's skills directory (like `.cursor/skills/`), or into a repo's local skills directory to install for that project only.
 
 ### First run
 

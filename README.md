@@ -31,11 +31,19 @@ Install as a plugin and coffee comes to you: the first time you talk to Claude C
 
 Takes effect in your next session. On native Windows the morning greeting needs Git Bash installed.
 
-### Cursor, Codex, and most other agents
+### Cursor
 
-    npx skills add RMPasta/codebase-coffee
+    npx skills add RMPasta/codebase-coffee --agent cursor -y -g
 
-It asks which agents you use and puts the skill where each one looks. These tools can't start it for you yet, so running it each morning is on you.
+### Codex
+
+    npx skills add RMPasta/codebase-coffee --agent codex -y -g
+
+### Other agents
+
+Swap in your agent's name, or run it bare (`npx skills add RMPasta/codebase-coffee`) to pick from a list. Drop `-g` to install for the current project only.
+
+Outside Claude Code, no tool can start it for you yet, so running it each morning is on you.
 
 ## Manual install
 

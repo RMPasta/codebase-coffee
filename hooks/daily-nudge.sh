@@ -19,5 +19,5 @@ stamp="$stamp_dir/$key"
 today=$(date +%F)
 if [ ! -f "$stamp" ] || [ "$(cat "$stamp")" != "$today" ]; then
   printf '%s' "$today" > "$stamp"
-  echo "codebase-coffee: this is the user's first session today in this repo. Unless their first message is clearly mid-task or urgent, open by offering the daily refresher in one short line, like: Morning, coffee? If they accept, invoke the codebase-coffee skill. If they decline or ignore it, drop the subject for the day."
+  echo "codebase-coffee: this is the user's first message today in this repo. Handle their message as normal, then end your reply with one short line offering the daily refresher, like: Also, morning coffee? Skip the offer only if the user is clearly firefighting an urgent problem. If they accept, invoke the codebase-coffee skill. If they decline or ignore it, drop the subject for the day."
 fi
